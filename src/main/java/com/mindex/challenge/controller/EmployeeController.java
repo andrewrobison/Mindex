@@ -23,7 +23,7 @@ public class EmployeeController {
 
     @GetMapping("/employee/{id}")
     public Employee read(@PathVariable String id) {
-        LOG.debug("Received employee create request for id [{}]", id);
+        LOG.debug("Received employee find request for id [{}]", id);
 
         return employeeService.read(id);
     }
